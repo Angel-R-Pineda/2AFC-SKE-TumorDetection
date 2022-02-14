@@ -7,7 +7,7 @@ This repository runs a 2 alternative forced choice experiment where you will att
 The inputs to this function are the dimension of the images in the array, an array of images with the signal present, an array of images without the signal present, and an image of the isolated signal itself. You will not be directly calling this function, as it is called within a larger function that is described below. 
 
 The outputs of this function are the number of images that the user correctly chose as containing the signal and an array of the coordinates where the user clicked on the image. 
-———————————————————————
+
 
 2. run2AFC_general_squeeze_9_24_20:
 
@@ -21,7 +21,6 @@ This function also stores the array of coordinates for the entire trial. Lastly,
 
 This function is the only function you will actually run in Matlab. Once running, you will enter your name, the image file name (WITHOUT .mat), the number of images you want to run in the trial (integer enter), and the trial number of the image set. Most of this information is used to store the data.
 
-———————————————————————
 
 Directions: 
 
