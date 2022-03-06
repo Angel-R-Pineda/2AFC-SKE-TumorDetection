@@ -6,7 +6,7 @@
 % Date: 9/24/20
 
 % This file is meant to run each trial and the variables
-% will be saved in a new file of the function run2AFC_general_squeeze_9_24_20. The file
+% will be saved in a new file of the function iterate2AFC_trials. The file
 % will be of the form "yourNametrialType_trialNumber"
 
 % This script prompts the user to enter their name, file name of the image 
@@ -14,7 +14,7 @@
 
 % The inputs of the user are stored into three variables. Those variables 
 % are then used as parameters that are needed to call the function
-% run2AFC_general_squeeze_9_24_20.
+% iterate2AFC_trials.
 
 clear
 
@@ -50,5 +50,5 @@ pixelFactor = 1;
 % changes the size of individual pixels to magnify images based on the
 % user's monitor pixel size
 
-% run2AFC_general_squeeze_9_24_20 function is called
-run2AFC_general_squeeze_9_24_20(strw, strx, numy, numz, pixelFactor);
+% iterate2AFC_trials function is called
+iterate2AFC_trials(strw, strx, numy, numz, pixelFactor);
