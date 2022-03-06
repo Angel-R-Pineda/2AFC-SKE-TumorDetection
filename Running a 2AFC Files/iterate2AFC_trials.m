@@ -1,4 +1,4 @@
-function run2AFC_general_squeeze_9_24_20(userName,trialType, nImages, trialNumber,pixelFactor)
+function iterate2AFC_trials(userName,trialType, nImages, trialNumber,pixelFactor)
 % Written by: Alexandra O'Neill and Emely Valdez
 % Date: 7/28/20
 % Modified by: Angel Pineda
@@ -8,7 +8,7 @@ function run2AFC_general_squeeze_9_24_20(userName,trialType, nImages, trialNumbe
 
 
 % This function is responsible for actually running the 2AFC experiments.
-% It does so by calling the Test2AFC_general_squeeze_9_24_20 function and storing 
+% It does so by calling the run2AFC function and storing 
 % the necessary parameters for the study. 
 
 % The inputs are the name of the participant, the type of trial one is
@@ -92,12 +92,12 @@ for j = 1:nImages
     sampleTumorImage = squeeze(tumorImageArray(randomOrderForSignal(j),:,:));
     
     
-    % calls the function Test2AFC_general_squeeze_9_24_20 which prompts the user to select
+    % calls the function run2AFC which prompts the user to select
     % an image and stores the coordinates of the user's click, if the user 
     % chooses the image with a signal, jthAnswer = 1. If the user chooses the
     % image without a signal, jthAnswer = 0
     % function returns the jthAnswer and jthCoordinates
-    [jthAnswer, jthCoordinates] = Test2AFC_general_squeeze_9_24_20(dimension,sampleTumorImage,sampleNoTumorImage,signalImage,pixelFactor);
+    [jthAnswer, jthCoordinates] = run2AFC(dimension,sampleTumorImage,sampleNoTumorImage,signalImage,pixelFactor);
     
     % assigning jthCoordinates to the the jth row of the coordinateArray
     coordinateArray(j,:) = jthCoordinates;
