@@ -26,6 +26,8 @@ Directions:
 
 In the folder that you have received, along with this ReadMe file, there are 5 files: the 2 function files that are explained above, 1 run template file, and 2 data files with the sets of images that you will be using for this study.
 
+The only file that will be run is the runExperiment_Template file. Open this file and run it. The file will prompt you to enter the necessary information to start the experiment and store the data.
+
 Once you run the template and enter the necessary information as explained above, a figure window will appear with 3 images, one containing the signal, one not containing the signal, and one of the isolated signal itself. Your job is to click on the image (left or right) that you believe the signal is in. After each click, whether you got it correct or incorrect will appear in the command window. After you have completed all nImages trials, your percentage selected correctly will appear as the output.
 
 You will run this experiment twice with both of the data arrays that are provided in the folder and your trials will be recorded and stored. Your trials will be saved as separate files called ‘userName_trialType_trialNumber’ for future reference and analysis. 
